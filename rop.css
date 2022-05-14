@@ -1,0 +1,297 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+section{
+
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+body { 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-family: sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background: linear-gradient(#061c31, #00030a);
+    background-repeat: no-repeat;
+    font-size: 10pt;
+
+
+    }
+
+header{
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 15px;
+    word-spacing: 65px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14pt;
+}
+
+#dadosdaocorrencia{
+    background: black;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+    font-size: 12pt;
+}
+
+#tipo_ocorrencia{  /* prisao/apreensao em flagrante*/
+    background: #606B64;
+    color: white;
+    padding: 3px 20px 3px 20px;
+    text-align: center;
+    font-size: 12pt;
+    word-spacing: 10px;
+    justify-content: space-between;
+ 
+  
+}
+
+table#tabela1{   /*  Tabela onde tem a logo*/
+    border: 1px solid black;
+    background: white;
+    border-collapse: collapse;
+    font-size: 12pt;
+    text-align: left;
+    padding: 2px;
+    font-weight: bold;
+    width: 100%;
+    
+}
+table#tabela1 td, th{ /*  Tabela onde tem a logo*/
+    border: 1px solid black;
+}
+
+#logogma{ /* Configuração da logo*/
+    width: 60px;
+    padding: 5px;
+}
+
+#tabeladados td,th {  /* Tabela Natureza Descrição*/
+     border: 1px solid rgb(0, 0, 0);
+     font-weight: bold;
+      
+     
+}
+
+
+#tabeladados { /* Tabela Natureza Descrição*/
+    border: 1px solid black;
+    background: white;
+    border-collapse: collapse;
+    font-size: 12pt;
+    text-align: left;
+    padding: 2px;
+    font-weight: bold;
+    width: 100%;
+   
+    }
+
+
+div#pessoasenvolvidas{ /*Dados das partes envolvidas na ocorrência*/
+        background: rgb(0, 0, 0);
+        color: white;
+        padding: 5px;
+        text-align: center;
+        font-size: 12pt;
+        
+    }
+
+div#tabelaenvolvidos{  /* Parte envolvida*/
+    background: #606B64;
+    display: flex;
+    color: white;
+    padding: 3px 20px 3px 20px;
+    text-align: center;
+    font-size: 12pt;
+    word-spacing: 10px;
+    justify-content: space-between;
+    
+   
+    }
+
+table#conduzidos{
+    border: 1px solid black;
+    background: white;
+    border-collapse: collapse;
+    font-size: 12pt;
+    text-align: left;
+    padding: 2px;
+    font-weight: bold;
+    width: 100%;
+}
+
+div#botao{
+    text-align: center;
+    
+    
+}
+
+table#conduzidos tr{
+    border: 1px solid black;
+   padding: 2px;
+   /*background: rebeccapurple;*/
+   
+}
+table#conduzidos td{
+    border: 1px solid black;
+    font-weight: bold;
+    
+  
+}
+
+input{
+  
+    text-align: center;
+    font-size: 10pt;
+    border: gray;
+}
+
+ .divbotao {
+    
+    padding: 5px;
+    background: #ffffff;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.divbotao button{
+    padding: 8px;
+    border-radius: 8px;
+     font-size: 10pt;
+     border: 1px solid black;
+}
+
+textarea{
+    resize:vertical;
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: 1px solid black;
+    margin: 0px;
+  
+}
+
+table#gms{
+    
+    border: 1px solid black;
+    background: white;
+    border-collapse: collapse;
+    font-size: 12pt;
+    text-align: left;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+table#gms td{
+    border: 1px solid black;
+    margin: 0px;
+    font-size: 12pt;
+    
+  
+   
+}
+
+table .gmss {
+text-align: center;
+background: black;
+color: white;
+border-collapse: collapse;
+
+}
+
+table .cabeca{
+    background: black;
+    color: white;
+    
+}
+
+
+
+#postodeservico{
+    background: white;
+    display: flex;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    margin: 0px;
+    padding: 1px;
+    justify-content: space-between;
+    padding-left: 5px;
+    font-size: 10pt;
+    
+
+}
+
+
+
+input#numerofolha{
+    width: 50px;
+    height: 30px;
+    font-size: 14pt;
+}
+
+.assinaturaequipe{
+    background: white;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 12pt;
+    padding: 25px;
+     height: 100;
+     text-align: center;
+     margin: 0px;
+     border-top: none;
+     
+}
+ .prefeitura {
+    text-align: center;}
+
+
+#sexo{
+  word-spacing: 20px;
+}
+   
+select {
+    border: gray;
+}
+
+#rodape{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    font-size: 9pt;
+    padding: 5px;
+    word-spacing: 5px;
+    text-align: center;
+}
+
+
+.imprimir{
+    text-align: center;
+    padding: 10px;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.imprimir button{
+   padding: 8px;
+   border-radius: 8px;
+   font-size: 10pt;
+}
+
+
+

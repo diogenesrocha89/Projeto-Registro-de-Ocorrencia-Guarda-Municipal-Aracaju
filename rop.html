@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rop.css">
+    <link rel="stylesheet" href="javascrip.js" class="js">
+    <title>ROP GMA</title>
+</head>
+<header> GUARDA MUNICIPAL DE ARACAJU </header>
+<body>
+
+<section>
+   <table id="tabela1">
+    <tr>
+        <td rowspan="3"> <img src="download.jpg" alt="" id="logogma"> </td>
+        <td rowspan="3" class="prefeitura">
+         <b> Prefeitura de Aracaju <br>
+          Secretaria de Defesa Social e Cidadania </b>
+        </td> 
+        <td colspan="2">Registro de ocorrência nº:   <input  type="text" name="" id="relatorio" size="40"></td>
+    </tr>
+    <tr>
+        <td >  Data do Fato: <input type="date" name="" id="">   </td>
+        <td >  Hora do Fato: <input type="time" name="" id=""> </td>
+    </tr>
+    <tr>
+        <td colspan="2">Destinatário: <input type="text" name="" id="" size="52"> </td>
+        
+    </tr>
+   </table>
+
+
+   <div id="tipo_ocorrencia">
+
+    <input type="checkbox" name=" item" id=""> Prisão/Apreensão em Flagrante
+    <input type="checkbox" name="" id=""> Comunicação de Ocorrência 
+    <input type="checkbox" name="" id=""> Mandado de prisão em aberto 
+    <input type="checkbox" name="" id=""> Outros
+
+    </div>
+
+    <div id="dadosdaocorrencia">
+        I - DADOS DA OCORRÊNCIA 
+    </div>
+
+    <table id="tabeladados">
+
+        <tr>
+            <td align="left"> Natureza: <input type="text" size="" > </td>
+            <td colspan="2" >  Descrição: <input type="text" size="20" > </td>
+
+        </tr>
+        <tr>
+            <td colspan="2"> Logradouro:  <input type="text" size="60"> </td>
+           <td> UF: <input type="text"  size="10"></td>
+
+        </tr>
+        <tr>
+            <td rowspan="1"> Cidade: <input type="text" size="50"> </td>
+            <td rowspan="1"> Número: <input type="text"  size="1"> </td>
+            <td>Bairro: <input type="text"  size="10" ></td>
+        </tr>
+           </table>
+
+ <div id="pessoasenvolvidas">
+           II - DADOS DAS PARTES ENVOLVIDAS NA OCORRÊNCIA 
+</div>
+
+<div id="tabelaconduz"> 
+    <div id="tabelaenvolvidos">
+        <i class="fa-solid fa-user-tie"></i> PARTE ENVOLVIDA: 
+        <input type="checkbox" name="" id=""> Vítima
+        <input type="checkbox" name="" id=""> Testemunha
+        <input type="checkbox" name="" id=""> Autor
+        <input type="checkbox" name="" id=""> Outros
+    </div>
+
+     <div >
+        <table id="conduzidos">
+            <tr>
+                <td >Nome: <input type="text" name="" id="" size="30"></td>
+                <td>Data de Nascimento: <input type="date" name="" id="" size="10"></td>
+                <td>Bairro: <input type="text" name="" id="" size="30"></td>
+            </tr>
+            <tr>
+                <td>Condição Física: <input type="text" name="" id="" value="Sem Ferimentos" size="20">        </td>
+                <td id="sexo"> Sexo: 
+                    <select name="" > 
+                        <option value="">Masculino</option>
+                        <option value="">Feminino</option>
+                    </select> 
+                </td>
+
+                <td>Mãe: <input type="text" name="" id="" size="30"></td>
+            </tr>
+             <tr>
+                <td>RG:  <input type="text" name="" id="" size="30"></td>
+                <td>End: <input type="text" name="" id="" size="30"></td>
+                <td>Pai: <input type="text" name="" id="" size="30"></td>
+            </tr>
+            <tr>
+                <td>CPF: <input type="text" name="" id="" size="30"></td>
+                <td>Cidade: <input type="text" name="" id="" size="30"></td>
+                <td>Telefone: <input type="text" name="" id="" size="30"></td>
+             </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Abaixo onde vai ser inserido novo campo de envolvido-->
+
+<div class="divbotao">
+    <button  onclick="inserir()"> Adicionar Parte Envolvida <i class="fa-solid fa-user-tie"></i> </button>
+</div>
+   
+
+
+<div id="dadosdaocorrencia">
+    III - APREENSÕES (OBJETOS, ARMAS, VEÍCULOS, SUBSTANCIA ENTORPECENTE, OUTROS...)
+</div>
+    <textarea name="" class="apreensoes" cols="30" rows="10" maxlength="1000"></textarea>
+
+<div id="dadosdaocorrencia">
+    IV - RELATO DA OCORRÊNCIA
+</div>
+
+    <textarea name="" class="apreensoes" cols="30" rows="10" maxlength="1000"></textarea>
+
+ 
+
+ <table id="gms">
+    <tr class="gmss">
+        <td rowspan="6">V - GMS ENVOLVIDOS NA OCORRÊNCIA</td>
+        
+    </tr> 
+    <tr class="cabeca">
+        <td>GRADUAÇÃO</td>
+        <td>NOME DE GUERRA</td>
+        <td>MATRÍCULA</td>
+    </tr> 
+    <tr>
+        <td class="celula"> 
+            <select name="" > 
+                <option value=""></option>
+                <option value="">GM-1</option>
+                <option value="">GM-2</option>
+                <option value="">GM-3</option>
+                <option value="">SUPERVISOR</option>
+                <option value="">SUB-INSPETOR</option>
+                <option value="">INSPETOR</option>
+            </select> 
+        </td>
+        <td class="celula"><input type="text" name="" id=""></td>
+        <td class="celula"><input type="text" name="" id=""></td>
+    </tr> 
+    <tr>
+        <td class="celula"> 
+            <select name="" > 
+            <option value=""></option>
+            <option value="">GM-1</option>
+            <option value="">GM-2</option>
+            <option value="">GM-3</option>
+            <option value="">SUPERVISOR</option>
+            <option value="">SUB-INSPETOR</option>
+            <option value="">INSPETOR</option>
+            </select> 
+        </td>
+        <td class="celula"><input type="text" name="" id=""></td>
+        <td class="celula"><input type="text" name="" id=""></td>
+    </tr> 
+    <tr>
+        <td class="celula">            
+            <select name="" > 
+            <option value=""></option>
+            <option value="">GM-1</option>
+            <option value="">GM-2</option>
+            <option value="">GM-3</option>
+            <option value="">SUPERVISOR</option>
+            <option value="">SUB-INSPETOR</option>
+            <option value="">INSPETOR</option>
+            </select>  
+        </td>
+        <td class="celula"><input type="text" name="" id=""></td>
+        <td class="celula"><input type="text" name="" id=""></td>
+    </tr> 
+    <tr>
+        
+        <td class="celula">            
+            <select name="" > 
+            <option value=""></option>
+            <option value="">GM-1</option>
+            <option value="">GM-2</option>
+            <option value="">GM-3</option>
+            <option value="">SUPERVISOR</option>
+            <option value="">SUB-INSPETOR</option>
+            <option value="">INSPETOR</option>
+            </select>  
+        </td>
+        <td class="celula"><input type="text" name="" id=""></td>
+        <td class="celula"><input type="text" name="" id=""></td>
+    </tr> 
+
+</table>
+
+<div class="assinaturaequipe">
+         __________________________________________________________ <br> Assinatura do responsável pela equipe
+</div> 
+
+
+
+<div id="postodeservico">
+    POSTO DE SERVIÇO: <input type="text" name="" id="" size="45">
+    TURNO:<input type="text" name="24h" id="" value="24h">
+</div>
+
+<div id="dadosdaocorrencia">
+    VI - RECIBO DA AUTORIDADE A QUE SE DESTINA OU SEU REPRESENTANTE LEGAL
+</div>
+<div class="assinaturaequipe"> 
+
+    Recebi este ROP com <input type="number" name="" id="numerofolha"> folha(s), com as pessoas acima qualificadas e nas condições
+    físicas descritas acima, portanto os objetos especificados no campo III que foram apreendidos e apresentados
+    nesta unidade policial. <br>
+    <br>
+    <br>
+    __________________________________________________________ <br>
+                Assinatura da Autoridade Policial
+</div>
+
+<div id="rodape">
+ <p> <i class="fa-solid fa-building-shield"></i> Guarda Municipal de Aracaju |
+    <i class="fa-solid fa-location-dot"></i> Endereço: Av. Beira Mar, S/N Parque Augusto Franco – Sementeira – CEP 49.025-040. |
+    <i class="fa-brands fa-whatsapp"></i> Tel.: (79) 8166-7790</p>
+</div>
+
+
+<div  class="imprimir">
+    <button  onclick="window.print()"> Imprimir  <i class="fa-solid fa-print"></i> </button>
+</div>
+
+<script src="javascrip.js"></script>
+<script src="https://kit.fontawesome.com/18d18cbb9b.js" crossorigin="anonymous"></script>
+</section>
+</body>
+
+</html>

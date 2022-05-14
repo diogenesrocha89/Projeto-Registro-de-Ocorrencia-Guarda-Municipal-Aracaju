@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+
+body { 
+   
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: linear-gradient(#061c31, #00030a);
+     background-repeat: no-repeat;
+     
+}
+
+div{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button{
+    width: 150px;
+    background-color: #00030a;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: gray;
+}
